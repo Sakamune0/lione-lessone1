@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>課題1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+  </head>
+  <body>
+<!-- navbar -->
+      <nav class="navbar navbar-expand-md ">
+      <div class="container">
+        <a href="#" class="navbar-brand"><img src="img/hd_logo.png" alt="" width="100px"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-globe-americas"></i>Worldwide Sites<i class="far fa-window-restore"></i></a>
+          </li>
+          <li class="navbar-nav form-group">
+            <input type="text" placeholder="検索する">
+          </li>
+        </ul>
+      </div>
+      </nav>
+    <main>
+<!-- menu -->
+    <div class="menu container">
+      <ul class="tab-group">
+        <li class="tab active-tab">製品情報</li>
+        <li class="tab ">レポート</li>
+        <li class="tab ">サステナビリティ</li>
+        <li class="tab ">IR情報</li>
+        <li class="tab ">企業情報</li>
+        <li class="tab ">お客様相談窓口</li>
+      </ul>
+      <div class="panel-group">
+<!-- product-info -->
+        <div class="panel show-panel product-info">
+          <div class="nav navbar-left menu-nav">
+            <a href="#">HOME</a>
+            <p>製品情報</p>
+          </div>
+          <div class="product-info-top">
+            <h1>製品情報</h1>
+            <p>すべての人々にめぐりくる日々を、健康で快適に。</p>
+          </div>
+        </div>
+<!-- レポート -->
+        <div class="panel show-panel report">
+          <div class="nav navbar-left menu-nav">
+            <a href="#">HOME</a>
+            <p>レポート</p>
+          </div>
+          <div class="report-top">
+            <h1>「今日を愛する」レポート</h1>
+            <p>私たちライオンが人々の清潔、健康、快適、環境を守るために日々続けている活動をご紹介いたします。</p>
+          </div>
+        </div>
+<!-- サステナビリティ -->
+        <div class="panel show-panel report">
+          <div class="nav navbar-left menu-nav">
+            <a href="#">HOME</a>
+            <p>レポート</p>
+          </div>
+          <div class="report-top">
+            <h1>「今日を愛する」レポート</h1>
+            <p>私たちライオンが人々の清潔、健康、快適、環境を守るために日々続けている活動をご紹介いたします。</p>
+          </div>
+        </div>
+        </div>
+        <div class="panel ">IR情報
+        </div>
+        <div class="panel ">企業情報
+        </div>
+        <div class="panel ">お客様相談窓口
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer></footer>
+<script src="https://kit.fontawesome.com/b9122a2891.js"></script>
+<script>
+  $(function(){
+    $('.tab').click(function(){
+      $('.active-tab').removeClass('active-tab');
+      $(this).addClass('active-tab');
+      $('.show-panel').removeClass('show-panel');
+      const index = $(this).index();
+      $('.panel').eq(index).addClass('show-panel');
+    });
+  });
+</script>
+  </body>
+</html>
