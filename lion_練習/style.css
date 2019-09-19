@@ -28,6 +28,8 @@
   padding-left:0;
   margin:0;
 }
+/* 1.横のボーダーラインのながさを変えたい */
+/* 3.文字を中央にしたい */
 .tab{
   list-style:none;
   border-left:1px solid green;
@@ -40,6 +42,7 @@
 .tab:last-child{
   border-right:1px solid green;
 }
+/* 2.ボーダーラインの横幅をいっぱいにしたい */
 .active-tab{
   border-bottom:3px solid green;
 }
@@ -84,6 +87,8 @@
   background-size:cover;
   padding:30px;
 }
+/* 4.お客様相談窓口の時、長さが右(.customer-right)と同じ長さになってします
+ */
 .top-title{
   margin-top:30px;
   background-color:green;
